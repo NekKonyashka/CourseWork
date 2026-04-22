@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="stylesheet" href="./static/styles/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Меню</title>
+</head>
+<body>
+        <header>
+        <div class="logo-container">
+            <img src="./static/images/Logo.png" alt="logo" width="48" height="48">
+            <div class="logo-text">
+                <h1 class="name">Violent Azure</h1>
+                <h3 class="description">Домашняя выпечка</h3>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </label>
+        <nav class="header-container">
+            <ul class="header-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a class="active-link" href="#">Меню</a></li>
+                <li><a href="./about-us.html">О нас</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="basket">
+            <img src="./static/images/Basket.svg" alt="basket" width="24" height="24">
+        </div>
+    </header>
+    <main>
+        <section class="main-head">
+            <div class="main-head-container">
+                <h1>Наше меню</h1>
+                <p>Откройте для себя наш вкусный выбор свежей выпечки</p>
+            </div>
+        </section>
+        <section class="products">
+            <nav>
+                <button class="active">Все товары</button>
+                <button>Торты</button>
+                <button>Капкейки</button>
+                <button>Выпечка</button>
+                <button>Хлеб</button>
+            </nav>
+            <div class="products-list">
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Purple Velvet Cake.jpg" alt="">
+                    <h3>Фиолетовый бархатный торт</h3>
+                    <p>Нежный бархатный торт с кремом из сливочного сыра</p>
+                    <div class="products-item-footer">
+                        <span>120 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Assorted Cupcakes.jpg" alt="">
+                    <h3>Ассорти капкейков</h3>
+                    <p>Набор из 6 изысканных капкейков разных вкусов</p>
+                    <div class="products-item-footer">
+                        <span>65 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/French Macarons.jpg" alt="">
+                    <h3>Французские макаруны</h3>
+                    <p>Нежное миндальное печенье, набор из 12 штук</p>
+                    <div class="products-item-footer">
+                        <span>45 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Butter Croissants.jpg" alt="">
+                    <h3>Круассаны сливочные</h3>
+                    <p>Слоеные сливочные французские круассаны, свежая выпечка</p>
+                    <div class="products-item-footer">
+                        <span>8 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Chocolate Muffins.jpg" alt="">
+                    <h3>Шоколадные маффины</h3>
+                    <p>Двойной шоколад с шоколадными каплями</p>
+                    <div class="products-item-footer">
+                        <span>13 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Cinnamon Rolls.jpg" alt="">
+                    <h3>Синнабоны</h3>
+                    <p>Свежая выпечка с корицей и глазурью из сливочного сыра</p>
+                    <div class="products-item-footer">
+                        <span>30 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Artisan Bread Loaves.jpg" alt="">
+                    <h3>Ремесленный хлеб</h3>
+                    <p>Свежеиспеченный хлеб на закваске и мультизерновой</p>
+                    <div class="products-item-footer">
+                        <span>6 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list-item">
+                    <img src="./static/images/Products/Blueberry Tart.jpg" alt="">
+                    <h3>Черничный тарт</h3>
+                    <p>Свежий черничный тарт с ванильным кремом</p>
+                    <div class="products-item-footer">
+                        <span>55 BYN</span>
+                        <div class="products-item-button">
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="contact-us-container">
+                <h2>Нужен индивидуальный заказ?</h2>
+                <p>Мы специализируемся на изготовлении тортов и десертов на заказ для свадеб, дней рождения и особых случаев</p>
+                <div class="contact-us-button">
+                    <a href="./contact.html">Свяжитесь с нами для заказа</a>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-item">
+                    <h2>Violet Azure</h2>
+                    <p>Свежая домашняя выпечка с доставкой к вашей двери.</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Навигация</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Меню</a></li>
+                            <li><a href="./about-us.html">О нас</a></li>
+                            <li><a href="./blog.html">Блог</a></li>
+                            <li><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h2>Контакты</h2>
+                    <div class="footer-item-contacts">
+                        <span>Беларусь, г.Минск</span>
+                        <span>ул.Бобруйская, д.25</span>
+                        <span>Phone: +375291234567</span>
+                        <span>Email: VAzure@gmail.com</span>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h2>График</h2>
+                    <div class="footer-item-hours">
+                        <span>Пн - Пт: 07:00 - 19:00</span>
+                        <span>Сб: 08:00 - 20:00</span>
+                        <span>Вс: 09:00 - 17:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Violet Azure. Все права защищены.</span>
+                <div class="footer-bottom-icons">
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.1667 1.66675H5.83335C3.53217 1.66675 1.66669 3.53223 1.66669 5.83341V14.1667C1.66669 16.4679 3.53217 18.3334 5.83335 18.3334H14.1667C16.4679 18.3334 18.3334 16.4679 18.3334 14.1667V5.83341C18.3334 3.53223 16.4679 1.66675 14.1667 1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.1609 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.50647 13.255C8.81425 13.1436 8.17478 12.8167 7.67901 12.321C7.18324 11.8252 6.85642 11.1857 6.74504 10.4935C6.63365 9.8013 6.74337 9.09159 7.05858 8.46532C7.3738 7.83905 7.87847 7.32812 8.5008 7.00521C9.12313 6.68229 9.83144 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5833 5.41675H14.5916" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1.66675H12.5C11.3949 1.66675 10.3351 2.10573 9.5537 2.88714C8.7723 3.66854 8.33331 4.72835 8.33331 5.83341V8.33341H5.83331V11.6667H8.33331V18.3334H11.6666V11.6667H14.1666L15 8.33341H11.6666V5.83341C11.6666 5.6124 11.7544 5.40044 11.9107 5.24416C12.067 5.08788 12.279 5.00008 12.5 5.00008H15V1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3334 3.33343C18.3334 3.33343 17.75 5.08343 16.6667 6.16677C18 14.5001 8.83335 20.5834 1.66669 15.8334C3.50002 15.9168 5.33335 15.3334 6.66669 14.1668C2.50002 12.9168 0.416687 8.0001 2.50002 4.16677C4.33335 6.33343 7.16669 7.58343 10 7.5001C9.25002 4.0001 13.3334 2.0001 15.8334 4.33343C16.75 4.33343 18.3334 3.33343 18.3334 3.33343Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

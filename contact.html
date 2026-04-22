@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="stylesheet" href="./static/styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./static/images/Logo.png" alt="logo" width="48" height="48">
+            <div class="logo-text">
+                <h1 class="name">Violent Azure</h1>
+                <h3 class="description">Домашняя выпечка</h3>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </label>
+        <nav class="header-container">
+            <ul class="header-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./menu.html">Меню</a></li>
+                <li><a href="./about-us.html">О нас</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a class="active-link"  href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="basket">
+            <img src="./static/images/Basket.svg" alt="basket" width="24" height="24">
+        </div>
+    </header>
+    <main>
+        <section class="main-header">
+            <div class="main-header-container">
+                <h1>Контакты</h1>
+                <p>Мы будем рады услышать от вас. Свяжитесь с нами сегодня!</p>
+            </div>
+        </section>
+        <section class="send-message">
+            <div class="send-message-container">
+                <div class="send-message-form-container">
+                    <h2>Отправить сообщение</h2>
+                    <form>
+                        <div class="form-block">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-block">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail" placeholder="youremail@example.com" required>
+                        </div>
+                        <div class="form-block">
+                            <label for="phone">Телефон (необязательно)</label>
+                            <input type="number" placeholder="+375 (**) ***-**-**">
+                        </div>
+                        <div class="form-block">
+                            <label for="message">Сообщение</label>
+                            <textarea name="message" id="message" placeholder="Расскажите нам о вашем запросе или индивидуальном заказе..."></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+                <div class="send-message-text">
+                    <div class="send-message-contacts">
+                        <h2>Свяжитесь с нами</h2>
+                        <div class="send-message-contacts-container">
+                            <div class="send-message-contacts-item">
+                                <div class="contacts-item-svg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" stroke="#5E2A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#5E2A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contacts-item-text">
+                                    <h3>Адрес</h3>
+                                    <span>123 Bakery Lane Sweet City, SC 12345</span>
+                                </div>
+                            </div>
+                            <div class="send-message-contacts-item">
+                                <div class="contacts-item-svg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.0004 16.92V19.92C22.0016 20.1985 21.9445 20.4741 21.8329 20.7293C21.7214 20.9845 21.5577 21.2136 21.3525 21.4018C21.1473 21.5901 20.905 21.7335 20.6412 21.8227C20.3773 21.9119 20.0978 21.945 19.8204 21.92C16.7433 21.5856 13.7874 20.5341 11.1904 18.85C8.77425 17.3146 6.72576 15.2661 5.19042 12.85C3.5004 10.2412 2.44866 7.27097 2.12042 4.17997C2.09543 3.90344 2.1283 3.62474 2.21692 3.3616C2.30555 3.09846 2.44799 2.85666 2.63519 2.6516C2.82238 2.44653 3.05023 2.28268 3.30421 2.1705C3.5582 2.05831 3.83276 2.00024 4.11042 1.99997H7.11042C7.59573 1.9952 8.06621 2.16705 8.43418 2.48351C8.80215 2.79996 9.0425 3.23942 9.11042 3.71997C9.23704 4.68004 9.47187 5.6227 9.81042 6.52997C9.94497 6.8879 9.97408 7.27689 9.89433 7.65086C9.81457 8.02482 9.62928 8.36809 9.36042 8.63998L8.09042 9.90997C9.51398 12.4135 11.5869 14.4864 14.0904 15.91L15.3604 14.64C15.6323 14.3711 15.9756 14.1858 16.3495 14.1061C16.7235 14.0263 17.1125 14.0554 17.4704 14.19C18.3777 14.5285 19.3204 14.7634 20.2804 14.89C20.7662 14.9585 21.2098 15.2032 21.527 15.5775C21.8441 15.9518 22.0126 16.4296 22.0004 16.92Z" stroke="#5E2A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contacts-item-text">
+                                    <h3>телефон</h3>
+                                    <span>+375 (**) *** **-**</span>
+                                </div>
+                            </div>
+                            <div class="send-message-contacts-item">
+                                <div class="contacts-item-svg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#5E2A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L13.03 11.7C12.7213 11.8934 12.3643 11.996 12 11.996C11.6357 11.996 11.2787 11.8934 10.97 11.7L2 6" stroke="#5E2A84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contacts-item-text">
+                                    <h3>Email</h3>
+                                    <span>VAzure@violetcrumb.com</span>
+                                </div>
+                            </div>
+                            <div class="send-message-contacts-item">
+                                <div class="contacts-item-svg">
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 29.3334C23.3638 29.3334 29.3333 23.3638 29.3333 16C29.3333 8.63622 23.3638 2.66669 16 2.66669C8.6362 2.66669 2.66666 8.63622 2.66666 16C2.66666 23.3638 8.6362 29.3334 16 29.3334Z" stroke="#5E2A84" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 8V16L21.3333 18.6667" stroke="#5E2A84" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </div>
+                                <div class="contacts-item-text">
+                                    <h3>График</h3>
+                                    <span>Пн - Пт: 07:00 - 19:00</span>
+                                    <span>Сб: 08:00 - 20:00</span>
+                                    <span>Вс: 09:00 - 17:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send-message-info">
+                        <h2>Информация о заказах</h2>
+                        <div class="send-message-info-container">
+                            <div class="send-message-info-item">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66699 1.66663V4.99996" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 1.66663V4.99996" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8333 3.33337H4.16667C3.24619 3.33337 2.5 4.07957 2.5 5.00004V16.6667C2.5 17.5872 3.24619 18.3334 4.16667 18.3334H15.8333C16.7538 18.3334 17.5 17.5872 17.5 16.6667V5.00004C17.5 4.07957 16.7538 3.33337 15.8333 3.33337Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 8.33337H17.5" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Индивидуальные заказы: уведомление за 48 часов</span>
+                            </div>
+                            <div class="send-message-info-item">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16667 18.1083C9.42003 18.2546 9.70744 18.3316 10 18.3316C10.2926 18.3316 10.58 18.2546 10.8333 18.1083L16.6667 14.775C16.9198 14.6288 17.13 14.4187 17.2763 14.1657C17.4225 13.9126 17.4997 13.6256 17.5 13.3333V6.66663C17.4997 6.37435 17.4225 6.0873 17.2763 5.83426C17.13 5.58122 16.9198 5.37109 16.6667 5.22496L10.8333 1.89163C10.58 1.74535 10.2926 1.66833 10 1.66833C9.70744 1.66833 9.42003 1.74535 9.16667 1.89163L3.33333 5.22496C3.08022 5.37109 2.86998 5.58122 2.72372 5.83426C2.57745 6.0873 2.5003 6.37435 2.5 6.66663V13.3333C2.5003 13.6256 2.57745 13.9126 2.72372 14.1657C2.86998 14.4187 3.08022 14.6288 3.33333 14.775L9.16667 18.1083Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 18.3333V10" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.74121 5.83337L9.99954 10L17.2579 5.83337" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.25 3.55835L13.75 7.85002" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Бесплатная доставка при заказе от 70 BYN</span>
+                            </div>
+                            <div class="send-message-info-item">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.667 4.16663H3.33366C2.41318 4.16663 1.66699 4.91282 1.66699 5.83329V14.1666C1.66699 15.0871 2.41318 15.8333 3.33366 15.8333H16.667C17.5875 15.8333 18.3337 15.0871 18.3337 14.1666V5.83329C18.3337 4.91282 17.5875 4.16663 16.667 4.16663Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.66699 8.33337H18.3337" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Принимаем все основные кредитные карты</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-item">
+                    <h2>Violet Azure</h2>
+                    <p>Свежая домашняя выпечка с доставкой к вашей двери.</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Навигация</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./menu.html">Меню</a></li>
+                            <li><a href="./about-us.html">О нас</a></li>
+                            <li><a href="./blog.html">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h2>Контакты</h2>
+                    <div class="footer-item-contacts">
+                        <span>Беларусь, г.Минск</span>
+                        <span>ул.Бобруйская, д.25</span>
+                        <span>Phone: +375291234567</span>
+                        <span>Email: VAzure@violetcrumb.com</span>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h2>График</h2>
+                    <div class="footer-item-hours">
+                        <span>Пн - Пт: 07:00 - 19:00</span>
+                        <span>Сб: 08:00 - 20:00</span>
+                        <span>Вс: 09:00 - 17:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Violet Azure. Все права защищены.</span>
+                <div class="footer-bottom-icons">
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.1667 1.66675H5.83335C3.53217 1.66675 1.66669 3.53223 1.66669 5.83341V14.1667C1.66669 16.4679 3.53217 18.3334 5.83335 18.3334H14.1667C16.4679 18.3334 18.3334 16.4679 18.3334 14.1667V5.83341C18.3334 3.53223 16.4679 1.66675 14.1667 1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.1609 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.50647 13.255C8.81425 13.1436 8.17478 12.8167 7.67901 12.321C7.18324 11.8252 6.85642 11.1857 6.74504 10.4935C6.63365 9.8013 6.74337 9.09159 7.05858 8.46532C7.3738 7.83905 7.87847 7.32812 8.5008 7.00521C9.12313 6.68229 9.83144 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5833 5.41675H14.5916" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1.66675H12.5C11.3949 1.66675 10.3351 2.10573 9.5537 2.88714C8.7723 3.66854 8.33331 4.72835 8.33331 5.83341V8.33341H5.83331V11.6667H8.33331V18.3334H11.6666V11.6667H14.1666L15 8.33341H11.6666V5.83341C11.6666 5.6124 11.7544 5.40044 11.9107 5.24416C12.067 5.08788 12.279 5.00008 12.5 5.00008H15V1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="footer-bottom-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3334 3.33343C18.3334 3.33343 17.75 5.08343 16.6667 6.16677C18 14.5001 8.83335 20.5834 1.66669 15.8334C3.50002 15.9168 5.33335 15.3334 6.66669 14.1668C2.50002 12.9168 0.416687 8.0001 2.50002 4.16677C4.33335 6.33343 7.16669 7.58343 10 7.5001C9.25002 4.0001 13.3334 2.0001 15.8334 4.33343C16.75 4.33343 18.3334 3.33343 18.3334 3.33343Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
