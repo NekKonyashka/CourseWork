@@ -1,0 +1,25 @@
+@import 'sass.scss';
+
+.main-header{
+    @include page-hero;
+}
+.main-header-container{
+    @include page-hero-container();
+}
+.main-header-container h1{
+    @include page-hero-title;
+}
+.main-header-container p{
+    @include page-hero-subtitle;
+}
+.featured-container{
+    @include page-hero-container(76.7%,left);
+    @include card-base;
+    box-shadow: $shadow-soft;
+}
+.articles-container{
+    @include page-hero-container(80%,left);
+}
+.subscribe-container{
+    @include page-hero-container(35%);
+}

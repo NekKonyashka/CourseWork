@@ -1,0 +1,23 @@
+@import 'sass.scss';
+
+.main-head{
+    @include page-hero;
+}
+.main-head-container{
+    @include page-hero-container();
+}
+.main-head-container h1{
+    @include page-hero-title;
+}
+.main-head-container p{
+    @include page-hero-subtitle;
+}
+.products-list-item{
+    @include card-base;
+}
+.contact-us-container{
+    @include page-hero-container();
+}
+.products-list{
+    @include page-hero-container(76.7%,left);
+}

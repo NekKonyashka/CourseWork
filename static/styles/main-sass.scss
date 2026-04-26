@@ -1,0 +1,24 @@
+@import 'sass.scss';
+
+.products-item{
+    @include card-base;
+}
+
+.rate-item{
+    @include card-base;
+}
+.browse-container{
+    @include page-hero-container();
+}
+.rate-container{
+    @include page-hero-container(80%,left);
+}
+.products-container{
+    @include page-hero-container(80%,left);
+}
+.facts-container{
+    @include page-hero-container();
+}
+.fresh-daily-container{
+    @include page-hero-container();
+}

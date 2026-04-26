@@ -1,0 +1,32 @@
+@import 'sass.scss';
+
+.main-header{
+    @include page-hero;
+}
+.main-header-container{
+    @include page-hero-container();
+}
+.main-header-container h1{
+    @include page-hero-title;
+}
+.main-header-container p{
+    @include page-hero-subtitle;
+}
+.story-container img{
+    box-shadow: $shadow-soft;
+}
+.story-container{
+    @include page-hero-container(76.7%,left);
+}
+.values-container{
+    @include page-hero-container();
+}
+.image-container{
+    @include page-hero-container(76.7%);
+}
+.about-ingredients-container{
+    @include page-hero-container();
+}
+.visit-container{
+    @include page-hero-container();
+}

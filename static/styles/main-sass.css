@@ -1,0 +1,48 @@
+.products-item {
+  border: 1px solid #F3F4F6;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rate-item {
+  border: 1px solid #F3F4F6;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.browse-container {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rate-container {
+  width: 80%;
+  margin-inline: auto;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.products-container {
+  width: 80%;
+  margin-inline: auto;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.facts-container {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fresh-daily-container {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main-sass.css.map */
