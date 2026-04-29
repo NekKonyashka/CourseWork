@@ -30,3 +30,7 @@
 .visit-container{
     @include page-hero-container();
 }
+.browse a,
+.get-int a{
+    @include link;
+}

@@ -45,15 +45,15 @@
             </div>
         </section>
         <section class="products">
-            <nav>
-                <button class="active">Все товары</button>
-                <button>Торты</button>
-                <button>Капкейки</button>
-                <button>Выпечка</button>
-                <button>Хлеб</button>
+            <nav class="products-filter">
+                <button class="active" data-category="all">Все товары</button>
+                <button data-category="cakes">Торты</button>
+                <button data-category="cupcakes">Капкейки</button>
+                <button data-category="pastries">Выпечка</button>
+                <button data-category="bread">Хлеб</button>
             </nav>
             <div class="products-list">
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="cakes">
                     <img src="./static/images/Products/Purple Velvet Cake.jpg" alt="">
                     <h3>Фиолетовый бархатный торт</h3>
                     <p>Нежный бархатный торт с кремом из сливочного сыра</p>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="cupcakes">
                     <img src="./static/images/Products/Assorted Cupcakes.jpg" alt="">
                     <h3>Ассорти капкейков</h3>
                     <p>Набор из 6 изысканных капкейков разных вкусов</p>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="pastries">
                     <img src="./static/images/Products/French Macarons.jpg" alt="">
                     <h3>Французские макаруны</h3>
                     <p>Нежное миндальное печенье, набор из 12 штук</p>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="pastries">
                     <img src="./static/images/Products/Butter Croissants.jpg" alt="">
                     <h3>Круассаны сливочные</h3>
                     <p>Слоеные сливочные французские круассаны, свежая выпечка</p>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="cupcakes">
                     <img src="./static/images/Products/Chocolate Muffins.jpg" alt="">
                     <h3>Шоколадные маффины</h3>
                     <p>Двойной шоколад с шоколадными каплями</p>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="pastries">
                     <img src="./static/images/Products/Cinnamon Rolls.jpg" alt="">
                     <h3>Синнабоны</h3>
                     <p>Свежая выпечка с корицей и глазурью из сливочного сыра</p>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="bread">
                     <img src="./static/images/Products/Artisan Bread Loaves.jpg" alt="">
                     <h3>Ремесленный хлеб</h3>
                     <p>Свежеиспеченный хлеб на закваске и мультизерновой</p>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="products-list-item">
+                <div class="products-list-item" data-category="cakes">
                     <img src="./static/images/Products/Blueberry Tart.jpg" alt="">
                     <h3>Черничный тарт</h3>
                     <p>Свежий черничный тарт с ванильным кремом</p>
@@ -213,5 +213,6 @@
             </div>
         </div>
     </footer>
+    <script src="./static/scrypts/menuSort.js"></script>
 </body>
 </html>

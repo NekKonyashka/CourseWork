@@ -22,3 +22,12 @@
 .fresh-daily-container{
     @include page-hero-container();
 }
+.fresh-daily-order a{
+    @include link;
+}
+.products-button a{
+    @include link;
+}
+.browse-button a{
+    @include link;
+}

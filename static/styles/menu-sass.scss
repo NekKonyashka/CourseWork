@@ -21,3 +21,6 @@
 .products-list{
     @include page-hero-container(76.7%,left);
 }
+.contact-us-button a{
+    @include link;
+}

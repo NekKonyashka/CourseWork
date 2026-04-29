@@ -17,7 +17,7 @@
     background-color: #F9FAFB;
 }
 .products-list{
-    min-height: 105.4vh;
+    min-height: auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: auto;
@@ -42,6 +42,11 @@
 .products nav .active{
     background-color: #5E2A84;
     color:#FFFFFF;
+}
+.products-filter button:hover{
+    background-color: #5E2A84;
+    color:#FFFFFF;
+    transition-duration: 0.2s;
 }
 .products-list-item{
     display: inline-flex;
@@ -98,6 +103,12 @@
     flex-shrink: 0;
     overflow: hidden;
 }
+.products-list-item span{
+    color:#5E2A84;
+    font-weight: 600;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+}
 .products-item-button::before{
     position: absolute;
     content: "";
@@ -113,6 +124,10 @@
     transform: translateY(-50%);
     filter: brightness(0) invert(1);
     pointer-events: none;
+}
+.products-item-button:hover{
+    scale: 1.1;
+    transition-duration: 0.2s;
 }
 .products-item-button a{
     position: absolute;
@@ -167,12 +182,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 32px;
+    width: fit-content;
+}
+.contact-us-button:hover{
+    scale:1.1;
+    transition-duration:0.2s;
 }
 .contact-us-button a{
     color: #FFFFFF;
     font-weight: 600;
     line-height: 1.5rem;
+    padding-inline: 32px;
 }
 
 @media (max-width: 1600px){

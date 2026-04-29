@@ -58,6 +58,10 @@ form .form-block textarea{
     box-sizing: border-box;
     resize: none;
 }
+input:focus,
+textarea:focus{
+    color:#101828;
+}
 .send-message-form-container button{
     background-color: #5E2A84;
     border-radius: 60px;
@@ -71,6 +75,10 @@ form .form-block textarea{
     line-height: 1.5rem;
     font-family: 'Montserrat';
     border: none;
+}
+.send-message-form-container button:hover{
+    scale:1.1;
+    transition-duration: 0.2s;
 }
 .send-message-text{
     display: flex;

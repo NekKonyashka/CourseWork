@@ -52,4 +52,12 @@
   margin-inline: auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+
+.featured-container-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=blog-sass.css.map */

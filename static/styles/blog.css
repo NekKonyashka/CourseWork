@@ -82,29 +82,34 @@ main{
 .featured-container-link{
     height: 48px;
     width: fit-content;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-width: 190px;
-    padding-inline: 24px;
     background-color: #5E2A84;
     border-radius: 60px;
 }
 .featured-container-link a{
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     color:#FFFFFF;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 600;
+    padding-inline: 24px;
 }
 .featured-container-link a::after{
     display: block;
+    position: absolute;
+    top:30%;
+    right: 6%;
     content: "";
     width: 20px;
     aspect-ratio: 1;
-    margin-left: 8px;
     background-image: url('../images/Arrow.svg');
+}
+.featured-container-link:hover{
+    scale:1.1;
+    transition-duration: 0.2s;
 }
 .articles{
     max-width: 100vw;
@@ -237,6 +242,14 @@ article{
     line-height: 1.25rem;
     font-weight: 600;
 }
+.article-item-link a:hover{
+    color:#CBC3E3;
+    transition-duration: 0.2s;
+}
+.article-item-link a:hover::after{
+    background-color: #CBC3E3;
+    transition-duration: 0.2s;
+}
 .article-item-link a::after{
     position: absolute;
     top:14%;
@@ -322,6 +335,10 @@ article{
     font-weight: 600;
     line-height: 1.5rem;
     font-size: 1rem;
+}
+.subscribe-container-input button:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(212,175,55,0.7);
 }
 
 @media (max-width: 1200px){

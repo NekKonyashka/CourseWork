@@ -23,3 +23,6 @@
 .subscribe-container{
     @include page-hero-container(35%);
 }
+.featured-container-link a{
+    @include link;
+}

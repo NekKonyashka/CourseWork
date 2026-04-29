@@ -4,6 +4,7 @@ h1,h2,h3,h4,h5,h6,p{
 a{
     text-decoration: none;
 }
+
 ul,ol{
     padding: 0;
     margin: 0;
@@ -29,11 +30,13 @@ header{
     display: flex;
     flex-direction: row;
     gap:8px;
+    align-items: center;
     font-family: 'Montserrat';
-    height: 48px;
+    min-height: 48px;
+    height: auto;
     width: 17vw;
     text-align: left;
-    padding-block:16px;
+    padding-block:8px;
 }
 
 .name{
@@ -41,6 +44,7 @@ header{
     line-height: 2rem;
     font-weight:600;
     color: #5E2A84;
+    white-space: nowrap;
 }
 
 .description{
@@ -48,6 +52,7 @@ header{
     line-height: 1rem;
     font-weight: 400;
     color:#717182;
+    white-space: nowrap;
 }
 
 .header-container{
@@ -186,7 +191,10 @@ footer{
     color: #CBC3E3;
     line-height: 1.25rem;
 }
-
+.footer-item a:hover{
+    color:#FFFFFF;
+    transition-duration: 0.2s;
+}
 .footer-item nav{
     display: flex;
     flex-direction: column;
@@ -237,4 +245,48 @@ footer{
     border-radius: 50%;
     width: 40px;
     aspect-ratio: 1;
+}
+.footer-bottom-icon:hover{
+    background-color: rgb(203, 195, 227,0.5);
+    transition-duration: 0.2s;
+}
+
+@media(max-width:768px){
+    header{
+        padding-inline: 14px;
+        min-height: auto;
+        padding-block: 10px;
+        position: relative;
+    }
+    .logo-text{
+        display: none;
+    }
+    .header-container{
+        width: 50vw;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 14px;
+        right: 14px;
+        background-color: #FFFFFF;
+        border: 1px solid #F3F4F6;
+        padding: 12px;
+        z-index: 10;
+    }
+    .header-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-list li a{
+        display: block;
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+    .menu-toggle:checked ~ .header-container{
+        display: flex;
+    }
+    .burger{
+        display: inline-flex;
+        margin-left: auto;
+    }
 }

@@ -24,7 +24,7 @@
     height: 36px;
     box-sizing: border-box;
     border-radius: 60px;
-    background-color:  rgb(212,175,55,0.9);;
+    background-color: #CBC3E3;
     justify-content: right;
     align-items: center;
     padding-inline:16px;
@@ -73,7 +73,6 @@
     display: inline-flex;
     width: fit-content;
     box-sizing: border-box;
-    padding-inline: 32px;
     height: 60px;
     margin-top: 31px;
     border-radius: 60px;
@@ -82,12 +81,12 @@
     align-items: center;
 }
 .fresh-daily-order a{
+    padding-inline: 32px;
     font-family: 'Montserrat';
     font-weight: 600;
     color:#101828;
     font-size: 1.125rem;
     line-height: 1.75rem;
-    width: 100%;
 }
 
 .facts{
@@ -274,9 +273,9 @@
 }
 .products-button{
     height: 48px;
-    padding-inline: 32px;
     background-color: #5E2A84;
     display: flex;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     border-radius: 48px;
@@ -291,7 +290,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 600;
-    width: 100%;
+    padding-inline: 32px;
 }
 .rate{
     max-width: 100vw;
@@ -409,7 +408,7 @@
     width: 42%;
 }
 .browse-button{
-    padding-inline: 32px;
+    width: fit-content;
     height: 60px;
     border-radius: 16px;
     background-color: #D4AF37;
@@ -427,7 +426,7 @@
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.75rem;
-    width: 100%;
+    padding-inline: 32px;
 }
 
 
@@ -457,6 +456,22 @@
 }
 
 @media (max-width: 992px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 20px;
+        padding-block: 12px;
+    }
+    .header-container{
+        order: 3;
+        width: 100%;
+        padding-block: 8px;
+    }
+    .header-list{
+        width: 100%;
+        justify-content: center;
+        gap: 16px 20px;
+    }
     .fresh-daily-link{
         width: auto;
         padding-inline: 24px;

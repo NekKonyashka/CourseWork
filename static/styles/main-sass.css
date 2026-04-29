@@ -45,4 +45,28 @@
   margin-inline: auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+
+.fresh-daily-order a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.products-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.browse-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main-sass.css.map */
