@@ -431,6 +431,9 @@ article{
         font-size: 1.0625rem;
         line-height: 1.5rem;
     }
+    .story-container img{
+        min-width: 0px;
+    }
 
     .story-text h2,
     .values-container h2,

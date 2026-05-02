@@ -25,6 +25,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    padding-right: 16px;
 }
 .featured-container-desc-title{
     background-color: #D4AF37;
@@ -388,7 +389,8 @@ article{
     }
 
     .subscribe-container{
-        width: 60%;
+        min-width: 80%;
+        margin-inline: auto;
     }
 
     .footer-container{
