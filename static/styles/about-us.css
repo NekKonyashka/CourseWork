@@ -255,24 +255,6 @@ article{
 }
 
 @media (max-width: 1200px){
-    header{
-        padding-inline: 32px;
-        gap: 20px;
-    }
-    .logo-container{
-        width: auto;
-        flex-shrink: 0;
-    }
-    .header-container{
-        width: auto;
-        height: auto;
-        padding-block: 20px;
-    }
-    .header-list{
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .story-container,
     .image-container{
@@ -311,31 +293,9 @@ article{
         width: auto;
     }
 
-    .footer-info{
-        margin-inline: 0;
-    }
-    .footer-bottom{
-        margin-inline: 0;
-    }
 }
 
 @media (max-width: 992px){
-    header{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-inline: 20px;
-        padding-block: 12px;
-    }
-    .header-container{
-        order: 3;
-        width: 100%;
-        padding-block: 8px;
-    }
-    .header-list{
-        width: 100%;
-        justify-content: center;
-        gap: 16px 20px;
-    }
 
     .main-header{
         min-height: auto;
@@ -407,16 +367,6 @@ article{
         justify-content: center;
     }
 
-    .footer-info{
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .footer-item{
-        width: calc(50% - 10px);
-    }
-    .footer-bottom{
-        align-items: center;
-    }
 }
 
 @media (max-width: 768px){
@@ -478,43 +428,9 @@ article{
         min-width: 240px;
         justify-content: center;
     }
-
-    .footer-container{
-        width: 94%;
-        padding-block: 36px;
-        gap: 24px;
-    }
-    .footer-item{
-        width: 100%;
-    }
-    .footer-bottom{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-        padding-top: 16px;
-    }
 }
 
 @media (max-width: 576px){
-    header{
-        padding-inline: 14px;
-    }
-    .logo-container{
-        height: auto;
-        align-items: center;
-    }
-    .name{
-        font-size: 1.125rem;
-        line-height: 1.5rem;
-    }
-    .description{
-        font-size: 0.6875rem;
-    }
-    .header-list li a{
-        font-size: 0.9375rem;
-        line-height: 1.25rem;
-    }
-
     .main-header-container h1{
         font-size: 1.875rem;
         line-height: 2.125rem;
@@ -551,20 +467,6 @@ article{
 }
 
 @media (max-width: 400px){
-    .logo-text{
-        display: none;
-    }
-    .header-list{
-        gap: 12px;
-    }
-    .header-list li a{
-        font-size: 0.875rem;
-    }
-    .basket{
-        width: 44px;
-        height: 44px;
-    }
-
     .main-header{
         padding-block: 36px;
     }
@@ -583,12 +485,5 @@ article{
 
     .about-ingredients-info-item{
         padding-inline: 16px;
-    }
-
-    .footer-bottom-icons{
-        gap: 10px;
-    }
-    .footer-bottom-icon{
-        width: 36px;
     }
 }
