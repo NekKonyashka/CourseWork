@@ -6,7 +6,7 @@
 .main-head-container{
     @include page-hero-container();
 }
-.main-head-container h1{
+.main-head-container h2{
     @include page-hero-title;
 }
 .main-head-container p{

@@ -1,4 +1,3 @@
-
 .send-message{
     max-width: 100vw;
     min-height: 76.4vh;
@@ -213,7 +212,7 @@ textarea:focus{
     .main-header-container{
         width: 92%;
     }
-    .main-header-container h1{
+    .main-header-container h2{
         font-size: 2.25rem;
         line-height: 2.5rem;
     }
@@ -248,7 +247,7 @@ textarea:focus{
         min-height: auto;
         padding-block: 36px;
     }
-    .main-header-container h1{
+    .main-header-container h2{
         font-size: 1.875rem;
         line-height: 2.125rem;
     }
@@ -278,6 +277,13 @@ textarea:focus{
 }
 
 @media (max-width: 400px){
+    .main-header{
+        padding-block: 36px;
+    }
+    .main-header-container h2{
+        font-size: 1.625rem;
+        line-height: 1.875rem;
+    }
     .send-message-form-container,
     .send-message-contacts,
     .send-message-info{

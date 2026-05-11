@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products>
     <product category="cakes">
-        <imageSource>./static/images/Products/Purple Velvet Cake.jpg</imageSource>
+        <imageSource>./static/images/Products/PurpleVelvetCake.jpg</imageSource>
         <productName>Фиолетовый бархатный торт</productName>
         <productDescription>Нежный бархатный торт с кремом из сливочного сыра</productDescription>
         <price>120</price>
     </product>
     <product category="cupcakes">
-        <imageSource>./static/images/Products/Assorted Cupcakes.jpg</imageSource>
+        <imageSource>./static/images/Products/AssortedCupcakes.jpg</imageSource>
         <productName>Ассорти капкейков</productName>
         <productDescription>Набор из 6 изысканных капкейков разных вкусов</productDescription>
         <price>65</price>
     </product>
     <product category="pastries">
-        <imageSource>./static/images/Products/French Macarons.jpg</imageSource>
+        <imageSource>./static/images/Products/FrenchMacarons.jpg</imageSource>
         <productName>Французские макаруны</productName>
         <productDescription>Нежное миндальное печенье, набор из 12 штук</productDescription>
         <price>45</price>
     </product>
     <product category="pastries">
-        <imageSource>./static/images/Products/Butter Croissants.jpg</imageSource>
+        <imageSource>./static/images/Products/ButterCroissants.jpg</imageSource>
         <productName>Круассаны сливочные</productName>
         <productDescription>Слоеные сливочные французские круассаны, свежая выпечка</productDescription>
         <price>8</price>
     </product>
     <product category="cupcakes">
-        <imageSource>./static/images/Products/Chocolate Muffins.jpg</imageSource>
+        <imageSource>./static/images/Products/ChocolateMuffins.jpg</imageSource>
         <productName>Шоколадные маффины</productName>
         <productDescription>Двойной шоколад с шоколадными каплями</productDescription>
         <price>13</price>
     </product>
     <product category="pastries">
-        <imageSource>./static/images/Products/Cinnamon Rolls.jpg</imageSource>
+        <imageSource>./static/images/Products/CinnamonRolls.jpg</imageSource>
         <productName>Синнабоны</productName>
         <productDescription>Свежая выпечка с корицей и глазурью из сливочного сыра</productDescription>
         <price>30</price>
     </product>
     <product category="bread">
-        <imageSource>./static/images/Products/Artisan Bread Loaves.jpg</imageSource>
+        <imageSource>./static/images/Products/ArtisanBreadLoaves.jpg</imageSource>
         <productName>Ремесленный хлеб</productName>
         <productDescription>Свежеиспеченный хлеб на закваске и мультизерновой</productDescription>
         <price>6</price>
     </product>
     <product category="cakes">
-        <imageSource>./static/images/Products/Blueberry Tart.jpg</imageSource>
+        <imageSource>./static/images/Products/BlueberryTart.jpg</imageSource>
         <productName>Черничный тарт</productName>
         <productDescription>Свежий черничный тарт с ванильным кремом</productDescription>
         <price>55</price>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,16 @@
 <body>
     <header>
         <div class="logo-container">
-            <a href="./index.html"><img src="./static/images/Logo.png" alt="logo" width="48" height="48"></a>
-            <div class="logo-text">
-                <h1 class="name">Violent Azure</h1>
-                <h3 class="description">Домашняя выпечка</h3>
-            </div>
+            <a href="./index.html">
+                <img src="./static/images/Logo.png" alt="logo" width="48" height="48">
+                <div class="logo-text">
+                    <h1 class="name">Violent Azure</h1>
+                    <h2 class="description">Домашняя выпечка</h2>
+                </div>
+            </a>
         </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="burger" aria-label="Открыть меню">
+        <label for="menu-toggle" class="burger">
             <span></span><span></span><span></span>
         </label>
         <nav class="header-container">
@@ -44,7 +46,7 @@
                     <div class="fresh-daily-link">
                         <span>Свежая выпечка каждый день</span>
                     </div>
-                    <h1>Булочки прямо как у вашей бабушки</h1>
+                    <h2>Булочки прямо как у вашей бабушки</h2>
                     <p>Торты, капкейки и кондитерские изделия с доставкой на дом</p>
                     <div class="fresh-daily-order">
                         <a href="./menu.html">Заказать сейчас</a>
@@ -60,7 +62,7 @@
                         <path d="M25.3333 18.6667C27.32 16.72 29.3333 14.3867 29.3333 11.3333C29.3333 9.38841 28.5607 7.52315 27.1854 6.14788C25.8102 4.77262 23.9449 4 22 4C19.6533 4 18 4.66667 16 6.66667C14 4.66667 12.3467 4 9.99999 4C8.05507 4 6.18981 4.77262 4.81454 6.14788C3.43927 7.52315 2.66666 9.38841 2.66666 11.3333C2.66666 14.4 4.66666 16.7333 6.66666 18.6667L16 28L25.3333 18.6667Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Сделано с любовью</h3>
+                    <h2>Сделано с любовью</h2>
                     <p>Каждое изделие создается с заботой из натуральных ингредиентов премиум-класса</p>
                 </div>
                 <div class="facts-info">
@@ -70,7 +72,7 @@
                         <path d="M16 8V16L21.3333 18.6667" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Всегда свежее</h3>
+                    <h2>Всегда свежее</h2>
                     <p>Выпекается свежим каждое утро для максимального вкуса и качества</p>
                 </div>
                 <div class="facts-info">
@@ -90,7 +92,7 @@
                         </defs>
                         </svg>
                     </div>
-                    <h3>Индивидуальные заказы</h3>
+                    <h2>Индивидуальные заказы</h2>
                     <p>Особый случай? Мы создаем торты на заказ для любого праздника</p>
                 </div>
             </div>
@@ -236,29 +238,27 @@
             <div class="footer-bottom">
                 <span>© 2026 Violet Azure. Все права защищены.</span>
                 <div class="footer-bottom-icons">
-                    <div class="footer-bottom-icon">
+                    <a class="footer-bottom-icon" href="#">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.1667 1.66675H5.83335C3.53217 1.66675 1.66669 3.53223 1.66669 5.83341V14.1667C1.66669 16.4679 3.53217 18.3334 5.83335 18.3334H14.1667C16.4679 18.3334 18.3334 16.4679 18.3334 14.1667V5.83341C18.3334 3.53223 16.4679 1.66675 14.1667 1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.1609 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.50647 13.255C8.81425 13.1436 8.17478 12.8167 7.67901 12.321C7.18324 11.8252 6.85642 11.1857 6.74504 10.4935C6.63365 9.8013 6.74337 9.09159 7.05858 8.46532C7.3738 7.83905 7.87847 7.32812 8.5008 7.00521C9.12313 6.68229 9.83144 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5833 5.41675H14.5916" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.1667 1.66675H5.83335C3.53217 1.66675 1.66669 3.53223 1.66669 5.83341V14.1667C1.66669 16.4679 3.53217 18.3334 5.83335 18.3334H14.1667C16.4679 18.3334 18.3334 16.4679 18.3334 14.1667V5.83341C18.3334 3.53223 16.4679 1.66675 14.1667 1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.1609 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.50647 13.255C8.81425 13.1436 8.17478 12.8167 7.67901 12.321C7.18324 11.8252 6.85642 11.1857 6.74504 10.4935C6.63365 9.8013 6.74337 9.09159 7.05858 8.46532C7.3738 7.83905 7.87847 7.32812 8.5008 7.00521C9.12313 6.68229 9.83144 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.5833 5.41675H14.5916" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
-                    <div class="footer-bottom-icon">
+                    </a>
+                    <a class="footer-bottom-icon" href="#">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1.66675H12.5C11.3949 1.66675 10.3351 2.10573 9.5537 2.88714C8.7723 3.66854 8.33331 4.72835 8.33331 5.83341V8.33341H5.83331V11.6667H8.33331V18.3334H11.6666V11.6667H14.1666L15 8.33341H11.6666V5.83341C11.6666 5.6124 11.7544 5.40044 11.9107 5.24416C12.067 5.08788 12.279 5.00008 12.5 5.00008H15V1.66675Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
-                    <div class="footer-bottom-icon">
+                    </a>
+                    <a class="footer-bottom-icon" href="#">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.3334 3.33343C18.3334 3.33343 17.75 5.08343 16.6667 6.16677C18 14.5001 8.83335 20.5834 1.66669 15.8334C3.50002 15.9168 5.33335 15.3334 6.66669 14.1668C2.50002 12.9168 0.416687 8.0001 2.50002 4.16677C4.33335 6.33343 7.16669 7.58343 10 7.5001C9.25002 4.0001 13.3334 2.0001 15.8334 4.33343C16.75 4.33343 18.3334 3.33343 18.3334 3.33343Z" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="./static/scrypts/setPopular.js"></script>
 </body>
-
-
 </html>

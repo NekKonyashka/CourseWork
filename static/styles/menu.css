@@ -266,7 +266,7 @@
     .main-head{
         padding-block: 48px;
     }
-    .main-head-container h1{
+    .main-head-container h2{
         font-size: 2.25rem;
         line-height: 2.5rem;
     }
@@ -326,7 +326,7 @@
     .main-head{
         padding-block: 40px;
     }
-    .main-head-container h1{
+    .main-head-container h2{
         font-size: 1.875rem;
         line-height: 2.125rem;
     }
@@ -383,7 +383,13 @@
 }
 
 @media (max-width: 400px){
-
+    .main-header{
+        padding-block: 36px;
+    }
+    .main-header-container h2{
+        font-size: 1.625rem;
+        line-height: 1.875rem;
+    }
     .products nav{
         gap: 8px;
     }

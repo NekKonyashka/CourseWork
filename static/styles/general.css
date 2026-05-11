@@ -4,7 +4,9 @@ h1,h2,h3,h4,h5,h6,p{
 a{
     text-decoration: none;
 }
-
+.empty{
+    display: none;
+}
 ul,ol{
     padding: 0;
     margin: 0;
@@ -39,8 +41,8 @@ header{
     padding-block:8px;
 }
 .logo-container a{
-    max-width: 48px;
-    max-height: 48px;
+    display: flex;
+    flex-direction: row;
 }
 
 .name{

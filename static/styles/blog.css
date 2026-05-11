@@ -156,19 +156,19 @@ article{
     background-size: 100% 120%;
 }
 .first{
-    background-image: url('../images/Products/Assorted\ Cupcakes.jpg');
+    background-image: url('../images/Products/AssortedCupcakes.jpg');
 }
 .second{
-    background-image: url('../images/Our\ baking\ team.jpg');
+    background-image: url('../images/OurBakingTeam.jpg');
 }
 .third{
-    background-image: url('../images/Products/Artisan\ Bread\ Loaves.jpg');
+    background-image: url('../images/Products/ArtisanBreadLoaves.jpg');
 }
 .fourth{
-    background-image: url('../images/Products/Blueberry\ Tart.jpg');
+    background-image: url('../images/Products/BlueberryTart.jpg');
 }
 .fifth{
-    background-image: url('../images/Products/Butter\ Croissants.jpg');
+    background-image: url('../images/Products/ButterCroissants.jpg');
 }
 .article-item-text{
     display: flex;
@@ -464,7 +464,7 @@ article{
     .main-header{
         padding-block: 48px;
     }
-    .main-header-container h1{
+    .main-header-container h2{
         font-size: 2.25rem;
         line-height: 2.5rem;
     }
@@ -520,7 +520,7 @@ article{
 
 @media (max-width: 576px){
 
-    .main-header-container h1{
+    .main-header-container h2{
         font-size: 1.875rem;
         line-height: 2.125rem;
     }
@@ -566,6 +566,13 @@ article{
 }
 
 @media (max-width: 400px){
+    .main-header{
+        padding-block: 36px;
+    }
+    .main-header-container h2{
+        font-size: 1.625rem;
+        line-height: 1.875rem;
+    }
     .featured-container{
         width: 94%;
     }
