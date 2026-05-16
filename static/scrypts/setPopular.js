@@ -30,7 +30,7 @@
                 <div class="products-item-footer">
                     <span>${price} BYN</span>
                     <div class="products-item-button">
-                        <a href="#">Купить</a>
+                        <button type="button" class="buy-btn">Купить</button>
                     </div>
                 </div>
             </div>

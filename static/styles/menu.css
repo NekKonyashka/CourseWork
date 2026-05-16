@@ -25,7 +25,7 @@
     padding-block: 48px;
     box-sizing: border-box;
 }
-.products button{
+.products-filter button{
     background-color: #F3F4F6;
     display: inline-flex;
     height: 44px;
@@ -38,6 +38,7 @@
     font-weight: 500;
     font-family: 'Montserrat';
     line-height: 1.5rem;
+    cursor: pointer;
 }
 .products nav .active{
     background-color: #5E2A84;
@@ -125,11 +126,16 @@
     filter: brightness(0) invert(1);
     pointer-events: none;
 }
-.products-item-button:hover{
-    scale: 1.1;
-    transition-duration: 0.2s;
+.products-item-button button:active{
+    opacity: 0.9;
 }
-.products-item-button a{
+@media (hover: hover){
+    .products-item-button:hover{
+        scale: 1.1;
+        transition-duration: 0.2s;
+    }
+}
+.products-item-button button{
     position: absolute;
     inset: 0;
     color:#FFFFFF;
@@ -144,9 +150,13 @@
     line-height: 1.25rem;
     font-size: 0.875rem;
     font-weight: 500;
+    font-family: inherit;
     z-index: 1;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
-.products-item-button a::before{
+.products-item-button button::before{
     content: none;
 }
 .contact-us{
@@ -230,6 +240,28 @@
     .contact-us-container p{
         width: 70%;
     }
+
+    .products-item-footer{
+        gap: 10px;
+    }
+    .products-list-item span{
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+    .products-item-button{
+        min-width: 92px;
+        height: 35px;
+        padding: 0 12px 0 32px;
+    }
+    .products-item-button button{
+        font-size: 0.84375rem;
+        padding-left: 32px;
+        padding-right: 11px;
+    }
+    .products-item-button::before{
+        width: 13px;
+        left: 13px;
+    }
 }
 
 @media (max-width: 992px){
@@ -246,8 +278,31 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
-    .products button{
+    .products-filter button{
         padding-inline: 18px;
+    }
+
+    .products-item-footer{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .products-list-item span{
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+    .products-item-button{
+        min-width: 88px;
+        height: 34px;
+        padding: 0 11px 0 30px;
+    }
+    .products-item-button button{
+        font-size: 0.8125rem;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .products-item-button::before{
+        width: 13px;
+        left: 12px;
     }
 
     .contact-us{
@@ -285,15 +340,24 @@
         font-size: 1.0625rem;
         line-height: 1.5rem;
     }
+    .products-item-footer{
+        margin-inline: 18px;
+        margin-bottom: 18px;
+    }
+    .products-list-item span{
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
     .products-item-button{
         min-width: 90px;
         height: 34px;
         padding: 0 12px 0 30px;
     }
-    .products-item-button a{
+    .products-item-button button{
         font-size: 0.8125rem;
         padding-left: 30px;
         padding-right: 10px;
+        min-height: 34px;
     }
     .products-item-button::before{
         width: 13px;
@@ -334,7 +398,7 @@
         font-size: 1rem;
     }
 
-    .products button{
+    .products-filter button{
         height: 40px;
         padding-inline: 14px;
         font-size: 0.875rem;
@@ -350,16 +414,26 @@
     .products-item-footer{
         margin-inline: 16px;
         margin-bottom: 16px;
+        gap: 6px;
+    }
+    .products-list-item span{
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
+        flex: 1 1 auto;
+        min-width: 0;
     }
     .products-item-button{
         min-width: 84px;
         height: 32px;
         padding: 0 10px 0 28px;
+        flex-shrink: 0;
     }
-    .products-item-button a{
+    .products-item-button button{
         font-size: 0.75rem;
         padding-left: 28px;
         padding-right: 8px;
+        min-height: 32px;
+        white-space: nowrap;
     }
     .products-item-button::before{
         width: 12px;
@@ -393,9 +467,33 @@
     .products nav{
         gap: 8px;
     }
-    .products button{
+    .products-filter button{
         font-size: 0.8125rem;
         padding-inline: 12px;
+        height: 38px;
+    }
+
+    .products-item-footer{
+        margin-inline: 14px;
+        margin-bottom: 14px;
+    }
+    .products-list-item span{
+        font-size: 0.875rem;
+    }
+    .products-item-button{
+        min-width: 78px;
+        height: 30px;
+        padding: 0 8px 0 26px;
+    }
+    .products-item-button button{
+        font-size: 0.6875rem;
+        padding-left: 26px;
+        padding-right: 6px;
+        min-height: 30px;
+    }
+    .products-item-button::before{
+        width: 11px;
+        left: 9px;
     }
 
     .contact-us-button{

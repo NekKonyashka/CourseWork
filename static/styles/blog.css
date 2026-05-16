@@ -289,13 +289,26 @@ article{
     padding-block: 64px;
     box-sizing: border-box;
 }
-.subscribe-container h2{
+form.subscribe-container{
+    display: block;
+    width: 35%;
+    margin-inline: auto;
+    text-align: center;
+    border: none;
+    padding: 0;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.subscribe-container h2,
+form.subscribe-container h2{
     color:#FFFFFF;
     font-size: 2.25rem;
     line-height: 2.5rem;
     font-weight: bold;
 }
-.subscribe-container p{
+.subscribe-container p,
+form.subscribe-container p{
     color:#CBC3E3;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -336,6 +349,11 @@ article{
     font-weight: 600;
     line-height: 1.5rem;
     font-size: 1rem;
+    cursor: pointer;
+}
+.subscribe-container-input input:focus{
+    outline: 2px solid #CBC3E3;
+    outline-offset: 2px;
 }
 .subscribe-container-input button:hover{
     transition-duration: 0.2s;
@@ -369,8 +387,10 @@ article{
         padding-inline: 0;
     }
 
-    .subscribe-container{
+    .subscribe-container,
+    form.subscribe-container{
         min-width: 80%;
+        width: 80%;
         margin-inline: auto;
     }
 
@@ -438,7 +458,8 @@ article{
         padding-block: 56px;
         min-height: auto;
     }
-    .subscribe-container{
+    .subscribe-container,
+    form.subscribe-container{
         width: 80%;
     }
 }
@@ -512,7 +533,8 @@ article{
         line-height: 1.5rem;
     }
 
-    .subscribe-container h2{
+    .subscribe-container h2,
+    form.subscribe-container h2{
         font-size: 1.75rem;
         line-height: 2.125rem;
     }
@@ -548,7 +570,8 @@ article{
         font-size: 0.9375rem;
     }
 
-    .subscribe-container{
+    .subscribe-container,
+    form.subscribe-container{
         width: 92%;
     }
     .subscribe-container-input{

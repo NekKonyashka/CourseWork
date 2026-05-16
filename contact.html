@@ -50,7 +50,7 @@
             <div class="send-message-container">
                 <div class="send-message-form-container">
                     <h2>Отправить сообщение</h2>
-                    <form>
+                    <form onsubmit="alert('Ваше сообщение успешно отправлено!')">
                         <div class="form-block">
                             <label for="name">Имя</label>
                             <input type="text" id="name" name="name" placeholder="Ваше имя" required>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="form-block">
                             <label for="phone">Телефон (необязательно)</label>
-                            <input type="number" id="phone" name="phone" placeholder="+375 (**) ***-**-**">
+                            <input type="number" id="phone" name="phone" placeholder="Ваш телефон">
                         </div>
                         <div class="form-block">
                             <label for="message">Сообщение</label>
@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="contacts-item-text">
                                     <h3>Телефон</h3>
-                                    <span>+375 (**) *** **-**</span>
+                                    <span>+375 (29) 123 45-67</span>
                                 </div>
                             </div>
                             <div class="send-message-contacts-item">
