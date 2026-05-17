@@ -1,0 +1,238 @@
+.container {
+    max-width: 100vw;
+    min-height: 61.6vh;
+    padding: 48px 24px 64px;
+    box-sizing: border-box;
+    background-color: #F9FAFB;
+}
+
+.basket-card {
+    box-sizing: border-box;
+    padding: 40px 32px;
+    width: min(100%, 560px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.basket-empty {
+    margin: 0;
+    text-align: center;
+    color: #4A5565;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.basket-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 12px;
+    min-height: 72px;
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.card-item__image {
+    flex-shrink: 0;
+    width: 72px;
+    align-self: stretch;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-item__body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding-block: 4px;
+}
+
+.card-item__name {
+    margin: 0;
+    color: #101828;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+}
+
+.card-item__price {
+    margin: 0;
+    color: #5E2A84;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.card-item__quantity {
+    flex-shrink: 0;
+    align-self: center;
+    padding-inline: 8px;
+    color: #364153;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.basket-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    margin-top: 4px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.basket-total__label {
+    color: #101828;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+}
+
+.basket-total__sum {
+    color: #5E2A84;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.basket-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+}
+
+.basket-btn {
+    flex: 1;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.basket-btn--clear {
+    background-color: #F3F4F6;
+    color: #364153;
+}
+
+.basket-btn--pay {
+    background-color: #5E2A84;
+    color: #FFFFFF;
+}
+
+.basket-btn:hover {
+    opacity: 0.9;
+}
+
+.basket-btn:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 32px 16px 48px;
+    }
+
+    .basket-card {
+        padding: 24px 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 24px 12px 40px;
+    }
+
+    .basket-card {
+        padding: 20px 12px;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .card-item {
+        min-height: 64px;
+        padding: 6px;
+        gap: 8px;
+    }
+
+    .card-item__image {
+        width: 56px;
+    }
+
+    .card-item__name {
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    .card-item__price {
+        font-size: 0.8125rem;
+    }
+
+    .card-item__quantity {
+        font-size: 0.8125rem;
+        padding-inline: 4px;
+    }
+
+    .basket-total__label {
+        font-size: 1rem;
+    }
+
+    .basket-total__sum {
+        font-size: 1.125rem;
+    }
+
+    .basket-btn {
+        font-size: 0.8125rem;
+        padding: 10px 12px;
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 20px 8px 32px;
+    }
+
+    .basket-card {
+        padding: 16px 10px;
+    }
+
+    .basket-actions {
+        gap: 8px;
+    }
+
+    .basket-btn {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+
+    .card-item__image {
+        width: 48px;
+    }
+}

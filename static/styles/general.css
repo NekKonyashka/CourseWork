@@ -102,19 +102,24 @@ header{
 .basket::after{
     display: flex;
     position: absolute;
-    content: "0";
-    top:3px;
+    content: attr(data-text);
+    top: 3px;
     right: 2px;
     justify-content: center;
     align-items: center;
-    width: 20px;
+    min-width: 20px;
     height: 20px;
+    padding-inline: 4px;
+    box-sizing: border-box;
     border-radius: 50%;
     font-weight: 500;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
+    line-height: 1;
     background-color: #5E2A84;
     color: #FFFFFF;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .basket:hover{
@@ -402,4 +407,12 @@ footer{
     .footer-bottom-icon{
         width: 36px;
     }
+}
+
+.products-item-button {
+    transition: background-color 0.45s ease;
+}
+
+.products-item-button.buy-btn--added {
+    background-color: #22C55E;
 }

@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/styles/general.css">
-    <link rel="stylesheet" href="./static/styles/menu.css">
-    <link rel="stylesheet" href="./static/styles/menu-sass.css">
+    <link rel="stylesheet" href="./static/styles/basket.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Меню</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap?&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <title>Корзина</title>
 </head>
 <body>
-    <header>
+        <header>
         <div class="logo-container">
             <a href="./index.html">
                 <img src="./static/images/Logo.png" alt="logo" width="48" height="48">
@@ -29,7 +28,7 @@
         <nav class="header-container">
             <ul class="header-list">
                 <li><a href="./index.html">Главная</a></li>
-                <li><a class="active-link" href="#">Меню</a></li>
+                <li><a href="./menu.html">Меню</a></li>
                 <li><a href="./about-us.html">О нас</a></li>
                 <li><a href="./blog.html">Блог</a></li>
                 <li><a href="./contact.html">Контакты</a></li>
@@ -40,35 +39,13 @@
         </div>
     </header>
     <main>
-        <section class="main-head">
-            <div class="main-head-container">
-                <h2>Наше меню</h2>
-                <p>Откройте для себя наш вкусный выбор свежей выпечки</p>
+        <div class="container">
+            <div class="basket-card">
+
             </div>
-        </section>
-        <section class="products">
-            <h2 class="empty">Заголовок</h2>
-            <nav class="products-filter">
-                <button class="active" data-category="all">Все товары</button>
-                <button data-category="cakes">Торты</button>
-                <button data-category="cupcakes">Капкейки</button>
-                <button data-category="pastries">Выпечка</button>
-                <button data-category="bread">Хлеб</button>
-            </nav>
-            <div class="products-list">
-            </div>
-        </section>
-        <section class="contact-us">
-            <div class="contact-us-container">
-                <h2>Нужен индивидуальный заказ?</h2>
-                <p>Мы специализируемся на изготовлении тортов и десертов на заказ для свадеб, дней рождения и особых случаев</p>
-                <div class="contact-us-button">
-                    <a href="./contact.html">Свяжитесь с нами для заказа</a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
-        <footer>
+    <footer>
         <div class="footer-container">
             <div class="footer-info">
                 <div class="footer-item">
@@ -79,7 +56,7 @@
                     <h2>Навигация</h2>
                     <nav>
                         <ul>
-                            <li><a href="#">Меню</a></li>
+                            <li><a href="./menu.html">Меню</a></li>
                             <li><a href="./about-us.html">О нас</a></li>
                             <li><a href="./blog.html">Блог</a></li>
                             <li><a href="./contact.html">Контакты</a></li>
@@ -129,8 +106,6 @@
         </div>
     </footer>
     <script src="./static/scrypts/cartStorage.js"></script>
-    <script src="./static/scrypts/getProducts.js"></script>
-    <script src="./static/scrypts/addToCart.js"></script>
-    <script src="./static/scrypts/menuSort.js"></script>
+    <script src="./static/scrypts/basket.js"></script>
 </body>
 </html>
